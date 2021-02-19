@@ -8,11 +8,11 @@
 		<version>2.3.0.M2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.swagger</groupId>
-	<artifactId>swagger</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>swagger</name>
-	<description>Demo project for Spring Boot</description>
+	<groupId>com.pacientes</groupId>
+	<artifactId>pacientes</artifactId>
+	<version>pacientes</version>
+	<name>pacientes</name>
+	<description>test project to api patients</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -135,5 +135,5 @@
 		</pluginRepository>
 	</pluginRepositories>
         
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 </project>

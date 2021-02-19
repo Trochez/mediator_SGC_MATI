@@ -5,13 +5,16 @@
  */
 package com.swagger.swagger.repository;
 
-import com.swagger.swagger.entity.object;
+import com.swagger.swagger.entity.patient;
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  *
  * @author root
  */
-public interface objectrepo extends JpaRepository<object,Long>{
+public interface patientRepository extends JpaRepository<patient,Long>{
+    
+    Optional<patient> findByNoDocument(Long nodocument);
     
 }

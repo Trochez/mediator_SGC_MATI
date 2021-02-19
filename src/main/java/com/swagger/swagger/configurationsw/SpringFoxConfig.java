@@ -64,7 +64,7 @@ public class SpringFoxConfig {
 
         return new ApiInfoBuilder()
 
-                .title("Service object")
+                .title("Service pateint")
 
                 .version("1.0")
 
@@ -76,7 +76,7 @@ public class SpringFoxConfig {
 
     private Predicate userPaths() {
 
-        return regex("/object.*");
+        return regex("/patient.*");
 
     }
 

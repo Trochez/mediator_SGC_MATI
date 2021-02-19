@@ -5,8 +5,7 @@
  */
 package com.swagger.swagger.api;
 
-import com.swagger.swagger.entity.object;
-import com.swagger.swagger.repository.objectrepo;
+import com.swagger.swagger.entity.patient;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import java.util.List;
@@ -19,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import com.swagger.swagger.repository.patientRepository;
 
 
 /**
@@ -26,78 +26,78 @@ import org.springframework.web.bind.annotation.RestController;
  * @author root
  */
 @RestController
-@RequestMapping("/object")
-@Api(value = "Object microservice", description = "This API has a CRUD for objects")
+@RequestMapping("/pateint")
+@Api(value = "Patient microservice", description = "This API has a CRUD for patients")
 public class objectapi {
     
     @Autowired
-    objectrepo or;   
+    patientRepository pr;   
     
     /**
      *
      * @return
      */
-    @GetMapping("/getobjects")
-    @ApiOperation(value = "Get all objects", notes = "Get all objects in db")
-    public List<object> getobjects(){
-        System.out.println("in getobjects");
-        return or.findAll();
+    @GetMapping("/getpatients")
+    @ApiOperation(value = "Get all patients", notes = "Get all patients in db")
+    public List<patient> getpatients(){
+        //System.out.println("in getpatients");
+        return pr.findAll();
     }
     
     /**
      *
-     * @param id
+     * @param nodocument
      * @return
      */
-    @PostMapping("/getobject")
-    @ApiOperation(value = "Get an object", notes = "Get an objects by id")
-    public object getobject(@RequestParam(value="id") Long id){
-        System.out.println("in getobject");
-        return or.findById(id).get();
+    @PostMapping("/getpatient")
+    @ApiOperation(value = "Get an patient", notes = "Get an patient by nodocument")
+    public patient getpatient(@RequestParam(value="nodocument") Long nodocument){
+        System.out.println("in getpatient");
+        return pr.findByNoDocument(nodocument).get();
     }
     
     /**
      *
-     * @param o
+     * @param patient
      * @return
      */
-    @PostMapping("/insertobject")
-    @ApiOperation(value = "Insert an object", notes = "Insert an object to db")
-    public object inserobject(@RequestBody object o){
+    @PostMapping("/insertpatient")
+    @ApiOperation(value = "Insert an patient", notes = "Insert an patient to db")
+    public patient inserobject(@RequestBody patient patient){
         System.out.println("in inserobject");
-        or.save(o);
-        return o;
+        pr.save(patient);
+        return patient;
     }
     
     /**
      *
-     * @param o
+     * @param patient
      * @return
      */
     @PutMapping("/updateobject")
-    @ApiOperation(value = "Update an object", notes = "Update an object with id")
-    public object updateobject(@RequestBody object o){
+    @ApiOperation(value = "Update an patient", notes = "Update an patient with nodocument")
+    public patient updateobject(@RequestBody patient patient){
         System.out.println("in updateobject");
-        or.findById(o.getId()).map(obj->{
-            obj.setObject(o);
-            or.save(obj);
-            return o;
+        pr.findByNoDocument(patient.getId()).map(ptn->{
+            ptn.setPatient(patient);
+            pr.save(ptn);
+            return patient;
         });
-        return o;
+        return patient;
     }
     
     /**
      *
-     * @param id
+     * @param nodocument
      * @return
-     */
+     *
     @DeleteMapping("/deleteobject")
     @ApiOperation(value = "Delete an object", notes = "Delete an object by id")
     public String deleteobject(@RequestParam(value="id") Long id){
         System.out.println("in deleteobject");
         or.deleteById(id);
         return "Object with id "+id+" was remove";
-    }
+    }*/
     
     
     
