@@ -1,6 +1,5 @@
-D:\la_u\arquitectura de software\proyecto\experimentacion\swagger\src\main\java\com\swagger\swagger\entity\object.java
-D:\la_u\arquitectura de software\proyecto\experimentacion\swagger\src\main\java\com\swagger\swagger\entity\patient.java
-D:\la_u\arquitectura de software\proyecto\experimentacion\swagger\src\main\java\com\swagger\swagger\api\objectapi.java
-D:\la_u\arquitectura de software\proyecto\experimentacion\swagger\src\main\java\com\swagger\swagger\repository\objectrepo.java
-D:\la_u\arquitectura de software\proyecto\experimentacion\swagger\src\main\java\com\swagger\swagger\SwaggerApplication.java
-D:\la_u\arquitectura de software\proyecto\experimentacion\swagger\src\main\java\com\swagger\swagger\configurationsw\SpringFoxConfig.java
+D:\la_u\arquitectura de software\proyecto\experimentacion\patient\src\main\java\com\swagger\swagger\api\patientapi.java
+D:\la_u\arquitectura de software\proyecto\experimentacion\patient\src\main\java\com\swagger\swagger\repository\patientRepository.java
+D:\la_u\arquitectura de software\proyecto\experimentacion\patient\src\main\java\com\swagger\swagger\configurationsw\SpringFoxConfig.java
+D:\la_u\arquitectura de software\proyecto\experimentacion\patient\src\main\java\com\swagger\swagger\entity\patient.java
+D:\la_u\arquitectura de software\proyecto\experimentacion\patient\src\main\java\com\swagger\swagger\SwaggerApplication.java

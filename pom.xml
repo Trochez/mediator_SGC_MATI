@@ -16,14 +16,15 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-                                    <db.user>root</db.user>
-                                    <db.pass>1234</db.pass>
-                                    <db.name>object</db.name>
-                                    <db.host>localhostt</db.host>
-                                    <db.port>3306</db.port>
+                                    <db.user>txjepvlyodyimq</db.user>
+                                    <db.pass>7d720142510236c1a5655324d71cbe946cd4808fb0d4cc57e37ce51d2c7f06ad</db.pass>
+                                    <db.name>d44h5968d6iv3q</db.name>
+                                    <db.host>ec2-52-22-161-59.compute-1.amazonaws.com</db.host>
+                                    <db.port>5432</db.port>
 	</properties>
 
 	<dependencies>
+                
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -46,6 +47,17 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+                <dependency>
+                    <groupId>org.postgresql</groupId>
+                    <artifactId>postgresql</artifactId>
+                    <version>42.2.19</version>
+                </dependency>
+                <dependency>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>javax.servlet-api</artifactId>
+                    <version>3.0.1</version>
+                    <scope>provided</scope>
+                </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -79,15 +91,6 @@
                                                       <artifactId>springfox-swagger-ui</artifactId>
 
                                                       <version>2.9.2</version>
-
-                                    </dependency>
-                                    <dependency>
-
-                                                      <groupId>org.springframework.boot</groupId>
-
-                                                      <artifactId>spring-boot-starter-tomcat</artifactId>
-
-                                                      <scope>provided</scope>
 
                                     </dependency>
                                     
