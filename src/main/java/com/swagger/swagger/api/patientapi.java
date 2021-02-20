@@ -100,5 +100,17 @@ public class patientapi {
     }*/
     
     
+    /**
+     *
+     * @param patient
+     * @return
+     */
+    @GetMapping("/loaderio-8703846326135f1902b511cad078c994/")
+    @ApiOperation(value = "loader.io token", notes = "get loader.io token")
+    public String gettoken(){
+        System.out.println("in gettoken");
+        return "loaderio-8703846326135f1902b511cad078c994";
+    }
+    
     
 }
