@@ -21,6 +21,13 @@
                                     <db.name>d44h5968d6iv3q</db.name>
                                     <db.host>ec2-52-22-161-59.compute-1.amazonaws.com</db.host>
                                     <db.port>5432</db.port>
+                                    <!--
+                                    <DB_HOST>ec2-52-22-161-59.compute-1.amazonaws.com</DB_HOST>
+                                    <DB_PORT>5432</DB_PORT>
+                                    <DB_NAME>d44h5968d6iv3q</DB_NAME>
+                                    <DB_USERNAME>txjepvlyodyimq</DB_USERNAME>
+                                    <DB_PASSWORD>7d720142510236c1a5655324d71cbe946cd4808fb0d4cc57e37ce51d2c7f06ad</DB_PASSWORD>
+                                    -->
 	</properties>
 
 	<dependencies>
@@ -87,7 +94,10 @@
                                                       <version>2.9.2</version>
 
                                     </dependency>
-                                    
+                                    <dependency>
+                                        <groupId>org.springframework.boot</groupId>
+                                        <artifactId>spring-boot-starter-actuator</artifactId>
+                                    </dependency>
 	</dependencies>
 
 	<build>
