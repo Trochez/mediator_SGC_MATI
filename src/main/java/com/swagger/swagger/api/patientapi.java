@@ -38,7 +38,7 @@ public class patientapi {
      *
      * @return
      */
-    @GetMapping("/getpatients")
+    @GetMapping("/all")
     @ApiOperation(value = "Get all patients", notes = "Get all patients in db")
     public List<patient> getpatients(){
         //System.out.println("in getpatients");
@@ -50,7 +50,7 @@ public class patientapi {
      * @param nodocument
      * @return
      */
-    @GetMapping("/getpatient/{nodocument}")
+    @GetMapping("/{nodocument}")
     @ApiOperation(value = "Get an patient", notes = "Get an patient by nodocument")
     public patient getpatient(@PathParam(value="nodocument") Long nodocument){
         System.out.println("in getpatient");
@@ -62,7 +62,7 @@ public class patientapi {
      * @param patient
      * @return
      */
-    @PostMapping("/insertpatient")
+    @PostMapping("/")
     @ApiOperation(value = "Insert an patient", notes = "Insert an patient to db")
     public patient inserobject(@RequestBody patient patient){
         System.out.println("in inserobject");
