@@ -1,7 +1,7 @@
 com\swagger\swagger\repository\patientRepository.class
 com\swagger\swagger\entity\patient.class
-com\swagger\swagger\api\shutdown.class
 com\swagger\swagger\api\tokenapi.class
 com\swagger\swagger\SwaggerApplication.class
+com\swagger\swagger\api\maintance.class
 com\swagger\swagger\api\patientapi.class
 com\swagger\swagger\configurationsw\SpringFoxConfig.class

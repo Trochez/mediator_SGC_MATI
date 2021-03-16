@@ -25,12 +25,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/maintenance")
 @Api(value = "Patient microservice")
-public class shutdown implements ApplicationContextAware {
+public class maintance implements ApplicationContextAware {
     
     private ApplicationContext context;
     
     @GetMapping("")
-    @ApiOperation(value = "shutdown patients application", notes = "shutdown patients application")
+    @ApiOperation(value = "maintenance patients application", notes = "maintenance patients application")
     public String shutdown(){
         
         ((ConfigurableApplicationContext) context).close();
