@@ -23,13 +23,13 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@RequestMapping("/maintenance")
+@RequestMapping("/maintenance_patient")
 @Api(value = "Patient microservice")
 public class maintance implements ApplicationContextAware {
     
     private ApplicationContext context;
     
-    @GetMapping("")
+    @GetMapping("/down")
     @ApiOperation(value = "maintenance patients application", notes = "maintenance patients application")
     public String shutdown(){
         

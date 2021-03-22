@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.swagger.swagger.repository.patientRepository;
 import javax.websocket.server.PathParam;
+import org.springframework.web.bind.annotation.PathVariable;
 
 
 /**
@@ -52,7 +53,7 @@ public class patientapi {
      */
     @GetMapping("/{nodocument}")
     @ApiOperation(value = "Get an patient", notes = "Get an patient by nodocument")
-    public patient getpatient(@PathParam(value="nodocument") Long nodocument){
+    public patient getpatient(@PathVariable(value="nodocument") Long nodocument){
         System.out.println("in getpatient");
         return pr.findByNoDocument(nodocument).get();
     }
