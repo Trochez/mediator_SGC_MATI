@@ -1,7 +1,8 @@
 com/swagger/swagger/configurationsw/SpringFoxConfig.class
-com/swagger/swagger/api/patientapi.class
+com/swagger/swagger/api/mediatorController.class
+com/swagger/swagger/entity/location.class
 com/swagger/swagger/SwaggerApplication.class
-com/swagger/swagger/api/tokenapi.class
-com/swagger/swagger/entity/patient.class
-com/swagger/swagger/repository/patientRepository.class
-com/swagger/swagger/api/maintance.class
+com/swagger/swagger/entity/ResponseProcedure.class
+com/swagger/swagger/entity/eventReport.class
+com/swagger/swagger/entity/translator.class
+com/swagger/swagger/repository/translatorRepository.class

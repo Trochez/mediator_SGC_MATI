@@ -5,60 +5,27 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.0.M2</version>
+		<version>2.5.0-M2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.pacientes</groupId>
-	<artifactId>pacientes</artifactId>
-	<version>pacientes</version>
-	<name>pacientes</name>
-	<description>test project to api patients</description>
+	<groupId>com.mediator</groupId>
+	<artifactId>mediator</artifactId>
+	<version>mediator</version>
+	<name>mediator</name>
+	<description>mediator to SGC</description>
 
-	<properties>
-		<java.version>1.8</java.version>
-                                    <db.user>txjepvlyodyimq</db.user>
-                                    <db.pass>7d720142510236c1a5655324d71cbe946cd4808fb0d4cc57e37ce51d2c7f06ad</db.pass>
-                                    <db.name>d44h5968d6iv3q</db.name>
-                                    <db.host>ec2-52-22-161-59.compute-1.amazonaws.com</db.host>
-                                    <db.port>5432</db.port>
-                                    <!--
-                                    <DB_HOST>ec2-52-22-161-59.compute-1.amazonaws.com</DB_HOST>
-                                    <DB_PORT>5432</DB_PORT>
-                                    <DB_NAME>d44h5968d6iv3q</DB_NAME>
-                                    <DB_USERNAME>txjepvlyodyimq</DB_USERNAME>
-                                    <DB_PASSWORD>7d720142510236c1a5655324d71cbe946cd4808fb0d4cc57e37ce51d2c7f06ad</DB_PASSWORD>
-                                    -->
-	</properties>
+	
 
 	<dependencies>
                 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-
-
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-                <dependency>
-                    <groupId>org.postgresql</groupId>
-                    <artifactId>postgresql</artifactId>
-                    <version>42.2.19</version>
-                </dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -98,7 +65,60 @@
                                         <groupId>org.springframework.boot</groupId>
                                         <artifactId>spring-boot-starter-actuator</artifactId>
                                     </dependency>
-	</dependencies>
+                                    
+                                    <dependency>
+                                        <groupId>org.springframework.data</groupId>
+                                        <artifactId>spring-data-redis</artifactId>
+                                        <version>2.5.1</version>
+                                                      <type>jar</type>
+                                    </dependency>
+
+                                    <dependency>
+                                        <groupId>redis.clients</groupId>
+                                        <artifactId>jedis</artifactId>
+                                        <version>3.3.0</version>
+                                        <type>jar</type>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.springframework.boot</groupId>
+                                        <artifactId>spring-boot-starter-data-redis</artifactId>
+                                        <version>2.3.3.RELEASE</version>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>org.springframework.ws</groupId>
+                                        <artifactId>spring-ws-core</artifactId>
+                                        <version>3.0.0.RC1</version>
+                                        <type>jar</type>
+                                    </dependency>
+                                    <!-- https://mvnrepository.com/artifact/javax.xml.soap/javax.xml.soap-api -->
+                                    <dependency>
+                                        <groupId>javax.xml.soap</groupId>
+                                        <artifactId>javax.xml.soap-api</artifactId>
+                                        <version>1.4.0</version>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>com.sun.xml.messaging.saaj</groupId>
+                                        <artifactId>saaj-impl</artifactId>
+                                        <version>1.5.1</version>
+                                    </dependency>
+                                    <dependency>
+                                     <groupId>javax.ws.rs</groupId>
+                                     <artifactId>jsr311-api</artifactId>
+                                     <version>1.1.1</version>
+                                     <type>jar</type>
+                                    </dependency>
+                                    <dependency>
+                                        <groupId>javax.servlet</groupId>
+                                        <artifactId>javax.servlet-api</artifactId>
+                                        <version>4.0.0</version>
+                                    </dependency>
+                                    <dependency>
+                                     <groupId>org.apache.httpcomponents</groupId>
+                                     <artifactId>httpclient</artifactId>
+                                     <version>4.5.13</version>
+                                     <type>jar</type>
+                                    </dependency>
+                                   </dependencies>
 
 	<build>
 		<plugins>

@@ -6,10 +6,13 @@
 package com.swagger.swagger.configurationsw;
 
 import com.google.common.base.Predicate;
+import com.swagger.swagger.entity.translator;
 
 import org.springframework.context.annotation.Bean;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
 
 import springfox.documentation.builders.ApiInfoBuilder;
 
@@ -79,5 +82,11 @@ public class SpringFoxConfig {
         return regex("/.*");
 
     }
-
+    @Bean
+    public RedisTemplate<String, translator> redisTemplate(RedisConnectionFactory connectionFactory) {
+        RedisTemplate<String, translator> template = new RedisTemplate<>();
+        template.setConnectionFactory(connectionFactory);
+        // Add some specific configuration here. Key serializers, etc.
+        return template;
+    }
 }

@@ -1,7 +1,8 @@
-/media/trocha/OS/la_u/arquitectura de software/proyecto/experimentacion/patient/src/main/java/com/swagger/swagger/entity/patient.java
-/media/trocha/OS/la_u/arquitectura de software/proyecto/experimentacion/patient/src/main/java/com/swagger/swagger/repository/patientRepository.java
-/media/trocha/OS/la_u/arquitectura de software/proyecto/experimentacion/patient/src/main/java/com/swagger/swagger/SwaggerApplication.java
-/media/trocha/OS/la_u/arquitectura de software/proyecto/experimentacion/patient/src/main/java/com/swagger/swagger/api/maintance.java
-/media/trocha/OS/la_u/arquitectura de software/proyecto/experimentacion/patient/src/main/java/com/swagger/swagger/api/tokenapi.java
-/media/trocha/OS/la_u/arquitectura de software/proyecto/experimentacion/patient/src/main/java/com/swagger/swagger/configurationsw/SpringFoxConfig.java
-/media/trocha/OS/la_u/arquitectura de software/proyecto/experimentacion/patient/src/main/java/com/swagger/swagger/api/patientapi.java
+/media/trocha/OS/la_u/arquitectura de software/proyecto cierre/mediatorSGC/src/main/java/com/swagger/swagger/SwaggerApplication.java
+/media/trocha/OS/la_u/arquitectura de software/proyecto cierre/mediatorSGC/src/main/java/com/swagger/swagger/entity/ResponseProcedure.java
+/media/trocha/OS/la_u/arquitectura de software/proyecto cierre/mediatorSGC/src/main/java/com/swagger/swagger/repository/translatorRepository.java
+/media/trocha/OS/la_u/arquitectura de software/proyecto cierre/mediatorSGC/src/main/java/com/swagger/swagger/api/mediatorController.java
+/media/trocha/OS/la_u/arquitectura de software/proyecto cierre/mediatorSGC/src/main/java/com/swagger/swagger/entity/location.java
+/media/trocha/OS/la_u/arquitectura de software/proyecto cierre/mediatorSGC/src/main/java/com/swagger/swagger/configurationsw/SpringFoxConfig.java
+/media/trocha/OS/la_u/arquitectura de software/proyecto cierre/mediatorSGC/src/main/java/com/swagger/swagger/entity/translator.java
+/media/trocha/OS/la_u/arquitectura de software/proyecto cierre/mediatorSGC/src/main/java/com/swagger/swagger/entity/eventReport.java
