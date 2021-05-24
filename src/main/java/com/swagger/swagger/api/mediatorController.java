@@ -110,7 +110,7 @@ public class mediatorController extends WebServiceGatewaySupport {
     
     
     @PostMapping(path="/receive",consumes = MediaType.ALL_VALUE)
-    public eventReport saveData(@RequestHeader("id_source") String idsource,@RequestHeader("Content-Type") String contenttype,
+    public eventReport saveData(@RequestHeader("idsource") String idsource,@RequestHeader("Content-Type") String contenttype,
             HttpServletRequest req, HttpServletResponse resp) {
         
         
@@ -155,18 +155,8 @@ public class mediatorController extends WebServiceGatewaySupport {
 
     }
     
-    @PostMapping(path="/receiveTest",consumes = MediaType.ALL_VALUE)
-    public String saveDataTest(@RequestHeader("id_source") String idsource,@RequestHeader("Content-Type") String contenttype,
-            HttpServletRequest req, HttpServletResponse resp) {
-        
-        
-        return "test to get url adaptor      "+gettranslator(idsource).getUrl();
-
-    }
-    
-    
     @PostMapping(path="/receivedummie")
-    public String saveDataDummie(@RequestHeader("id_source") String idsource) {
+    public String saveDataDummie(@RequestHeader("idsource") String idsource) {
         
         
         return "hello dummie      "+idsource;

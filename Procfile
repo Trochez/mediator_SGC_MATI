@@ -1,1 +1,1 @@
-web: java -jar target/pacientes-pacientes.jar
+web: java -jar target/mediator-mediator.jar
